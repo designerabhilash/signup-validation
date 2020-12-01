@@ -41,8 +41,6 @@ function checkInputs() {
 
     if(confirmpwdVal === '') {
         setErrorFor(confirmpwd, 'Confirm Password cannot be blank')
-    } else if(!isPwd(passwordVal)) {
-        setErrorFor(password, 'Include 8-15 character Password contain at least 1 lowercase & 1 uppercase letter, one numeric digit, and one special character')
     } else if(passwordVal !== confirmpwdVal) {
         setErrorFor(confirmpwd, 'Password does not match')
     } else {
